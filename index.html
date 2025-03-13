@@ -1,10 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Page</title>
+  <meta charset="UTF-8" />
+  <title>SwordMC - Welcome</title>
+  
+  <style>
+    /* 1. Load your custom font. 
+       - Adjust the filename and format if you have .woff or .woff2.
+       - The 'url(...)' path should point to wherever your font file is located. */
+    @font-face {
+      font-family: 'MyCustomFont';
+      src: url('fonts/MyCustomFont.ttf') format('truetype');
+      /* If you have multiple formats, list them like:
+         src: url('fonts/MyCustomFont.woff2') format('woff2'),
+              url('fonts/MyCustomFont.woff') format('woff'),
+              url('fonts/MyCustomFont.ttf') format('truetype');
+      */
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* 2. Reset and basic styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* 3. Body styling with gradient background and your custom font */
+    body {
+      /* Background gradient from black to dark gray */
+      background: linear-gradient(120deg, #000000 0%, #333333 100%);
+      font-family: 'MyCustomFont', Arial, sans-serif; /* Use your custom font, fallback to Arial */
+      color: #fff;
+    }
+
+    /* 4. Navigation bar */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* Replace "navbar-bg.png" with the path to your image */
+      background: url("navbar-bg.png") no-repeat center center;
+      background-size: cover;
+      padding: 10px 0;
+    }
+    .navbar a {
+      margin: 0 20px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    .navbar a:hover {
+      color: #ccc; /* Hover color */
+    }
+
+    /* 5. Main Title with gradient text */
+    .main-title {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 3rem;
+      /* Gradient text effect */
+      background: linear-gradient(45deg, #D2F915, #1478FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    /* 6. Subtitle */
+    .subtitle {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 2.5rem;
+      color: #1478FF;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    /* 7. Container for main content */
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Page!</h1>
-    <p>This is a simple website hosted on GitHub Pages.</p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#">Discord</a>
+    <a href="#">SwordMC</a>
+    <a href="#">Support Us</a>
+  </nav>
+
+  <div class="container">
+    <!-- Title Section -->
+    <h1 class="main-title">WELCOME TO SWORDMC PAGE</h1>
+    <h2 class="subtitle">BUY ITEMS!</h2>
+  </div>
 </body>
 </html>
